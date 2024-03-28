@@ -2,6 +2,9 @@
 
 :root {
   --primary-color: #dfdfdf;
+  --background-light: rgba(0, 0, 0, 0.5);
+  --background-middle: rgba(0, 0, 0, 0.6);
+  --background-dark: rgba(0, 0, 0, 0.8);
   --border-radius: 5px;
 }
 
@@ -20,7 +23,7 @@ body {
 h1 {
   color: whitesmoke;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--background-light);
   border-radius: var(--border-radius);
   cursor: pointer;
   text-align: center;
@@ -31,7 +34,7 @@ h1 {
 }
 
 h1:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--background-dark);
 }
 
 /* Bookmarks */
@@ -42,7 +45,7 @@ h1:hover {
 }
 
 .item {
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--background-light);
   color: whitesmoke;
   border-radius: var(--border-radius);
   padding: 20px;
@@ -50,7 +53,7 @@ h1:hover {
 }
 
 .item:hover {
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--background-middle);
 }
 
 a {
@@ -77,8 +80,7 @@ a:active {
 }
 
 .name {
-  margin-top: 25px;
-  margin-right: 25px;
+  margin: 25px;
 }
 
 .name img {
@@ -86,6 +88,104 @@ a:active {
   width: 25px;
   vertical-align: sub;
   margin-right: 5px;
+}
+
+/* Modal */
+.modal-container {
+  background: var(--background-middle);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.show-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: var(--primary-color);
+  box-shadow: 0 0 10px var(--background-dark);
+  max-width: 95%;
+  width: 500px;
+  animation: modalopen 1s;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.close-icon {
+  float: right;
+  color: var(--primary-color);
+  font-size: 24px;
+  position: relative;
+  top: 13px;
+  right: 13px;
+  cursor: pointer;
+}
+
+.modal-header {
+  background: var(--background-dark);
+  color: var(--primary-color);
+  padding: 15px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.modal-content {
+  padding: 20px;
+  background: whitesmoke;
+}
+
+/* Form */
+.form-group {
+  height: 55px;
+}
+
+.form-input {
+  width: 97%;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: var(--border-radius);
+  display: block;
+  outline: none;
+}
+
+.form-label {
+  color: var(--background-dark);
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  color: var(--primary-color);
+  background: var(--background-dark);
+  height: 30px;
+  width: 100px;
+  border: none;
+  border-radius: var(--border-radius);
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button:focus {
+  outline: none;
 }
 
 /* Media Query: Large Smartphone (Vertical) */
