@@ -4,7 +4,7 @@
 
 ## Summary
 
-Welcome to **Book(mark) Keeper**! This application provides a simple and intuitive way to manage your web bookmarks. It features a user-friendly interface, enabling users to easily add, delete, and access their favorite websites.
+Book(mark) Keeper provides a simple and intuitive way to manage your web bookmarks. It features a user-friendly interface, enabling users to easily add, delete, and access their favorite websites.
 
 The core functionality includes:
 
