@@ -1,6 +1,6 @@
-# Book(mark) Keeper -> [LIVE DEMO](https://shcoobz.github.io/bookmark-keeper/)
+# basicJS_Bookmark Keeper: [LIVE DEMO](https://shcoobz.github.io/basicJS_bookmark-keeper/)
 
-![Project Image](img/bookmark-keeper.png)
+![Project Image](img/basicJS_bookmark-keeper.png)
 
 ## Summary
 
